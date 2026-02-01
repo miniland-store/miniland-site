@@ -312,3 +312,21 @@ input, textarea {
 .btn-submit:hover {
     background-color: #ff7788; /* Loun mli k-t-7etti 3lih l-souris */
 }
+/* Responsive Grid: 3 produits par ligne sur smartphone */
+@media (max-width: 600px) {
+    .product-container { 
+        display: grid !important; /* !important bach t-forciha t-khdem */
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 5px; 
+        padding: 5px;
+    }
+
+    .product-card {
+        padding: 5px;
+        font-size: 10px; /* Sghari l-ktiba hit l-moussa7a dya9at */
+    }
+    
+    .product-card img {
+        height: auto; /* Bach t-tsawer may-t-jebdouch */
+    }
+}
