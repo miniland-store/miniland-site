@@ -1,0 +1,275 @@
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #fceef3;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #87cefa;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+.hero {
+    background-color: #fceef3;
+    padding: 20px;
+}
+.hero-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.hero h1 {
+    color: #444;
+    margin-top: 15px;
+}
+.hero p {
+    color: #777;
+    font-size: 18px;
+}
+
+/* ===== GRID UNIFORME POUR TOUS LES PRODUITS ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;  /* centre les cartes */
+    align-items: start;
+}
+
+/* ===== CARTE PRODUIT ===== */
+.product {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 200px; /* largeur uniforme */
+    box-sizing: border-box;
+}
+
+/* ===== IMAGE PRODUIT ===== */
+.product img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===== TITRES ===== */
+h2 {
+    text-align: center;
+    color: #444;
+    margin-top: 40px;
+}
+
+/* ===== BOUTONS ===== */
+.product button {
+    background: #7ec8e3;
+    color: #000;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.product button:hover {
+    background: #5bb5d6;
+}
+
+/* ===== DETAILS ===== */
+.details {
+    display: none;
+    margin-top: 10px;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #fceef3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #555;
+    font-size: 14px;
+}
+.footer p {
+    margin: 5px 0;
+}
+/* Styling Section Nous */
+#nous {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#nous h2 {
+    font-size: 28px;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.nous-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nous-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fceef3;
+}
+
+#contact h2 {
+    margin-bottom: 40px;
+    color: #444;
+    font-size: 28px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+}
+
+.contact-item i {
+    font-size: 32px;
+    color: #7ec8e3;
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+.main-order-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fceef3;
+    margin: 40px 0;
+    border-top: 2px dashed #ffb6c1;
+    border-bottom: 2px dashed #ffb6c1;
+}
+
+.btn-main-order {
+    background-color: #ffb6c1;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.btn-main-order:hover {
+    transform: scale(1.05);
+    background-color: #ff9aa2;
+}
+
+/* Modal CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+.order-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.order-options a {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.opt-whatsapp { background-color: #25d366; }
+.opt-phone { background-color: #3498db; }
+
+.close {
+    position: absolute;
+    right: 20px; top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
